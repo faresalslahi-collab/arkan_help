@@ -8,13 +8,17 @@ readme = "README.md"
 license = {text = "MIT"}
 keywords = ["frappe", "help", "documentation", "contextual-help", "onboarding"]
 classifiers = [
-    "Development Status :: 4 - Beta",
-    "Environment :: Web Environment",
-    "Framework :: Frappe",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: JavaScript",
+	"Development Status :: 4 - Beta",
+	"Environment :: Web Environment",
+	"Framework :: Frappe",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: JavaScript",
+]
+dependencies = [
+	"frappe>=16.0.0,<17.0.0",
+	"pypika>=0.48.0",
 ]
 
 [project.urls]
@@ -29,7 +33,6 @@ requires = ["flit_core >=3.4,<4"]
 build-backend = "flit_core.buildapi"
 
 [tool.bench.frappe-dependencies]
-frappe_visual = ""
 frappe = ">=16.0.0,<17.0.0"
 
 [tool.bench.dev-dependencies]
@@ -42,23 +45,23 @@ target-version = "py310"
 [tool.ruff.lint]
 select = ["F", "E", "W", "I", "UP", "B", "RUF"]
 ignore = [
-    "B017",   # assertRaises(Exception)
-    "B018",   # useless expression
-    "B023",   # function definition in loop
-    "B904",   # raise without from
-    "E101",   # mixed spaces and tabs
-    "E402",   # module level import not at top
-    "E501",   # line too long
-    "E741",   # ambiguous variable name
-    "F401",   # unused import
-    "F403",   # star imports
-    "F405",   # may be undefined from star import
-    "F722",   # syntax error in forward annotation
-    "W191",   # indentation contains tabs
-    "UP030",  # implicit positional references
-    "UP031",  # percent format
-    "UP032",  # f-string vs format
-    "RUF001", # ambiguous unicode
+	"B017",   # assertRaises(Exception)
+	"B018",   # useless expression
+	"B023",   # function definition in loop
+	"B904",   # raise without from
+	"E101",   # mixed spaces and tabs
+	"E402",   # module level import not at top
+	"E501",   # line too long
+	"E741",   # ambiguous variable name
+	"F401",   # unused import
+	"F403",   # star imports
+	"F405",   # may be undefined from star import
+	"F722",   # syntax error in forward annotation
+	"W191",   # indentation contains tabs
+	"UP030",  # implicit positional references
+	"UP031",  # percent format
+	"UP032",  # f-string vs format
+	"RUF001", # ambiguous unicode
 ]
 typing-modules = ["frappe.types.DF"]
 
@@ -75,7 +78,7 @@ python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
 markers = [
-    "slow: marks tests as slow",
-    "integration: integration tests",
-    "unit: unit tests",
+	"slow: marks tests as slow",
+	"integration: integration tests",
+	"unit: unit tests",
 ]
