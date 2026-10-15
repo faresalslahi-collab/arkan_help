@@ -1,4 +1,5 @@
-[project]
+[tool.bench.frappe-dependencies]
+frappe = ">=16.0.0,<17.0.0"
 name = "arkan-help"
 version = "0.1.0"
 description = "Contextual Help System for Frappe"
