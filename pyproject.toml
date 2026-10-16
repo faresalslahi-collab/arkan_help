@@ -1,5 +1,5 @@
 [project]
-name = "arkan-help"
+name = "arkan_help"
 version = "0.1.0"
 description = "Contextual Help System for Frappe"
 authors = [{name = "Arkan Lab", email = "dev@arkan.tech"}]
