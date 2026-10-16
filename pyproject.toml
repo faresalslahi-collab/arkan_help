@@ -79,3 +79,5 @@ markers = [
     "integration: integration tests",
     "unit: unit tests",
 ]
+[tool.flit.module]
+name = "arkan_help"
