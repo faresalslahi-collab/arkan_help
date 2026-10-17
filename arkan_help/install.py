@@ -16,13 +16,15 @@ def after_install():
     """Post-installation setup for Arkan Help."""
     # ── Desktop Icon injection (Frappe v16 /desk) ──
     from arkan_help.desktop_utils import inject_app_desktop_icon
+ 
     inject_app_desktop_icon(
         app="arkan_help",
         label="Arkan Help",
         route="/app/arkan-help",
         logo_url="/assets/arkan_help/images/arkan_help-logo.svg",
-        bg_color="#10B981",
+        bg_color="blue",
     )
+
     print(f"✅ {_("Arkan Help")}: post-install complete")
 
 
